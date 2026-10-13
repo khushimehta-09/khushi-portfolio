@@ -1,0 +1,25 @@
+{
+  "name": "khushi-mehta-portfolio",
+  "version": "2.0.0",
+  "description": "Premium recruiter-ready portfolio for Khushi Mehta — Full-Stack Developer (Python & Django, React) with CodeQuest Bug Hunt interactive demo.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"const fs = require('fs'); ['index.html', 'style.css', 'script.js', 'server.js', 'Khushi_Mehta_Resume.pdf'].forEach(f => { if (!fs.existsSync(f)) throw new Error('Missing file: ' + f); }); console.log('All core portfolio files verified successfully.');\""
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack-developer",
+    "python",
+    "django",
+    "react",
+    "javascript",
+    "vedas-tech"
+  ],
+  "author": "Khushi Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
