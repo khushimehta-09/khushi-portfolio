@@ -1,7 +1,7 @@
 {
   "name": "khushi-mehta-portfolio",
-  "version": "2.0.0",
-  "description": "Premium recruiter-ready portfolio for Khushi Mehta — Full-Stack Developer (Python & Django, React) with CodeQuest Bug Hunt interactive demo.",
+  "version": "2.1.0",
+  "description": "Personal developer portfolio of Khushi Mehta — Python & Django Developer | Full-Stack Development | AI-Assisted Engineering.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -10,12 +10,11 @@
   },
   "keywords": [
     "portfolio",
-    "full-stack-developer",
     "python",
     "django",
-    "react",
+    "full-stack",
     "javascript",
-    "vedas-tech"
+    "ai-assisted-development"
   ],
   "author": "Khushi Mehta",
   "license": "ISC",
