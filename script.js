@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
     );
     revealElements.forEach((el) => revealObserver.observe(el));
   } else {
@@ -140,15 +140,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!emailVal) {
-        if (emailError) emailError.textContent = "Please enter your email address.";
+        if (emailError)
+          emailError.textContent = "Please enter your email address.";
         isValid = false;
       } else if (!validateEmail(emailVal)) {
-        if (emailError) emailError.textContent = "Please enter a valid email address.";
+        if (emailError)
+          emailError.textContent = "Please enter a valid email address.";
         isValid = false;
       }
 
       if (!messageVal) {
-        if (messageError) messageError.textContent = "Please write a brief message.";
+        if (messageError)
+          messageError.textContent = "Please write a brief message.";
         isValid = false;
       }
 
@@ -160,13 +163,16 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const formData = new FormData(contactForm);
 
-        const response = await fetch("https://formsubmit.co/ajax/khushimehta1409@gmail.com", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
+        const response = await fetch(
+          "https://formsubmit.co/ajax/khushimehta1409@gmail.com",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+            },
+            body: formData,
           },
-          body: formData,
-        });
+        );
 
         if (response.ok) {
           if (formFeedback) {
@@ -182,10 +188,11 @@ document.addEventListener("DOMContentLoaded", () => {
       } catch (err) {
         // Fallback to mailto link
         const subject = encodeURIComponent(
-          document.getElementById("userSubject")?.value || "Portfolio Message for Khushi Mehta"
+          document.getElementById("userSubject")?.value ||
+            "Portfolio Message for Khushi Mehta",
         );
         const body = encodeURIComponent(
-          `Hi Khushi,\n\nName: ${nameVal}\nEmail: ${emailVal}\n\nMessage:\n${messageVal}`
+          `Hi Khushi,\n\nName: ${nameVal}\nEmail: ${emailVal}\n\nMessage:\n${messageVal}`,
         );
         window.location.href = `mailto:khushimehta1409@gmail.com?subject=${subject}&body=${body}`;
 

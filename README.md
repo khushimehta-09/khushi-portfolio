@@ -23,8 +23,8 @@ Personal developer portfolio for **Khushi Mehta** — Python & Django Developer 
 
 ## 🛠️ Skills & Technologies
 
-- **Core Languages & Web:** Python, Django, C, HTML, CSS, JavaScript
-- **Currently Learning:** APIs & Databases
+- **Core Languages & Web:** Python, Django, C, HTML & CSS
+- **Currently Learning:** JavaScript, APIs & Databases
 - **AI-Assisted Development & Vibe Coding:** ChatGPT, Gemini, GitHub Copilot, Antigravity
 - **Cloud & Deployment Experience:** Render, Vercel
 
