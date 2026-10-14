@@ -2,10 +2,10 @@
   "name": "khushi-mehta-portfolio",
   "version": "2.1.0",
   "description": "Personal developer portfolio of Khushi Mehta — Python & Django Developer | Full-Stack Development | AI-Assisted Engineering.",
-  "main": "server.js",
+  "main": "local-server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
+    "start": "node local-server.js",
+    "dev": "node local-server.js",
     "test": "node -e \"const fs = require('fs'); ['index.html', 'style.css', 'script.js', 'server.js', 'Khushi_Mehta_Resume.pdf'].forEach(f => { if (!fs.existsSync(f)) throw new Error('Missing file: ' + f); }); console.log('All core portfolio files verified successfully.');\""
   },
   "keywords": [
